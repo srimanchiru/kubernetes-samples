@@ -22,8 +22,8 @@ DEPLOYMENTS:
 ------------
 kubectl create -f ex4-nginx-deployment.yaml
 kubectl get deployments
-kubect get rs
-kubect get pods
+kubectl get rs
+kubectl get pods
 kubectl get pods -o wide
 kubectl apply -f ex5-deployment-dev-update.yaml
 kubectl get pods -o wide
@@ -36,7 +36,7 @@ $ kubectl set image deployment <deployment> <container>=<image> --record
 $ kubectl set image deployment nginx nginx=nginx:1.9 --record
 
 kubectl replace -f ex5-deployment-dev-update-1.9.yaml --record
-kubect rollout history deployment/nginx-deployment-dev
+kubectl rollout history deployment/nginx-deployment-dev
 kubectl rollout history deployment/nginx-deployment-dev
 
 *** ROLLOUT STATUS ***
